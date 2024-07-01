@@ -9,7 +9,38 @@
     <title>Vite Template</title>
   </head>
   <body>
-    <h1>HOLA</h1>
+    <header>
+      <div>
+        <span>YOU:</span>
+        <span id="points-user">0</span>
+      </div>
+      <div>
+        <span>PC:</span>
+        <span id="points-pc">0</span>
+      </div>
+    </header>
+    <main>
+      <div id="game-items" class="game-item">
+        <div class="game-item" data-item="paper">
+        <img src="./assets/images/icon-paper.svg" class="game-item__image" alt="icon paper">
+      </div>
+      <div class="game-item" data-item="scissor">
+        <img src="./assets/images/icon-scissors.svg" alt="icon scissors">
+      </div>
+      <div class="game-item" data-item="rock">
+        <img src="./assets/images/icon-rock.svg" alt="icon rock">
+      </div>
+    </div>
+    <div>
+      <span>YOU PICKED:</span>
+      <span id="user-picked"></span>
+    </div>
+    <div>
+      <span>PC PICKED:</span>
+      <span id="pc-picked"></span>
+    </div>
+    <P id="result">You win</P>
+    </main>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>
